@@ -14,3 +14,6 @@ CREATE TABLE "users"(
     AND "height" < 2.50
   )
 );
+
+ALTER TABLE "users"
+ADD COLUMN "weight" int CHECK ("weight">0 AND "weight"<=250);
